@@ -1,0 +1,16 @@
+<h2>Lista de Productos</h2>
+<button (click)="irACarrito()">Ver Carrito</button>
+<div class="products-container">
+  <div *ngFor="let product of products" class="product-item" (click)="showProductDetails(product)">
+    <h3>{{ product.title }}</h3>
+    <p>Precio: {{ product.price }}</p>
+  </div>
+</div>
+
+<div *ngIf="selectedProduct" class="product-details">
+  <h2>{{ selectedProduct.title }}</h2>
+  <p>Precio: {{ selectedProduct.price }}</p>
+  <p>Descripción: {{ selectedProduct.description }}</p>
+
+  <button (click)="addToCart(selectedProduct)">Agregar al Carrito</button>
+</div>

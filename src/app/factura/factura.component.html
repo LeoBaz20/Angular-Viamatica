@@ -1,0 +1,7 @@
+<h2>Factura</h2>
+<p>Código de Factura: {{ randomInvoiceCode }}</p>
+<ul>
+  <li *ngFor="let product of data.cart">
+    {{ product.title }} - Precio: {{ product.price }}
+  </li>
+</ul>

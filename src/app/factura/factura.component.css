@@ -1,0 +1,30 @@
+:host {
+    display: block;
+    padding: 20px;
+  }
+  
+  /* Estilos para encabezado */
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Estilos para la lista de productos */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Estilos para cada elemento de producto en la factura */
+  ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Estilos para resaltar el precio */
+  ul li span {
+    font-weight: bold;
+    color: #007bff;
+  }

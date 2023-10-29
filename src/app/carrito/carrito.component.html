@@ -1,0 +1,9 @@
+<h2>Carrito de Compras</h2>
+<div *ngIf="carrito.length === 0">El carrito está vacío</div>
+<div *ngFor="let product of carrito" class="cart-item">
+  <h3>{{ product.title }}</h3>
+  <p>Precio: {{ product.price }}</p>
+  <button (click)="removeFromCarrito(product)">Eliminar</button>
+</div>
+
+<button (click)="generarFactura()" [disabled]="isCartEmpty">Generar Factura</button>
